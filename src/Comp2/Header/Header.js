@@ -55,13 +55,13 @@ align-items: center;
 const Icon = styled(RiAccountCircleLine)`
  font-size:20px;
         font-weight:700;
-        color: #2C1236;
+        color: black;
     font-family: poppins;
 `
 const Icon1 = styled(FaCartArrowDown)`
  font-size:20px;
         font-weight:700;
-        color: #2C1236;
+        color: black;
     font-family: poppins;
 `
 const Acct = styled.div`
@@ -80,7 +80,7 @@ const Con  = styled.div`
     /* background:rgba(90,40,5,40%); */
     background-color: #EFEEF3;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     /* top: 0; */
     color: white;
     /* z-index:200; */
@@ -165,14 +165,15 @@ img{
     flex-direction:column;
     position: absolute;
     height: 80vh;
-    width: 50%;
+    width: 70%;
     top: 95px;
     justify-content:space-evenly;
     left: ${({change})=> (change? '-100%' : 0)};
-        background-color: black;
-        color: white;
+        background-color:  #2F123B;
+        color: black;
         border-radius: 0px 10px 10px 0px;
-        transition: all 900ms;
+        transition: all 1400ms;
+        color:white
 
 }
  
@@ -198,6 +199,8 @@ const MobileHold = styled.div`
    display: none; 
    @media screen and (max-width: 768px){
     display:flex;
+    font-size: 20px;
+    color:black;
      
 }
 `
