@@ -1,0 +1,66 @@
+.SliderBox{
+    width: 210px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    padding: 15px 35px;
+    height: auto;
+    min-height: 250px;
+ 
+}
+
+.SlideHold{
+    display: flex;
+    align-items: center;
+}
+.SliHold{
+    margin-left: 10px;
+    /* background-color: red; */
+}
+.SlideCardTest{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* text-align: center; */
+    color: #626262;
+    margin-top: 10px;
+}
+.SlideCardPic{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: aliceblue;
+}
+.SlideCardPic > img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+.SlideCardName{
+    font-size: 15px;
+    font-family: poppins;
+    color: #2F123B;
+}
+.SlideCard2Name{
+  
+    font-family: poppins;
+    font-size: 10px;
+    opacity: 0.60;
+}
+
+@media screen and (max-width:768px){
+    .SliderBox{
+        /* background-color: red; */
+    } 
+    .SlideHold{
+        width: 230px;
+    }
+    .SlideCardTest{
+        width: 230px;
+    }
+}

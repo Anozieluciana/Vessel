@@ -209,8 +209,3 @@ width: 100%;
 }
 `
 
-const Pic = styled.div`
-display: none;
-
-
-`

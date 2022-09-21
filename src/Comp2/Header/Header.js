@@ -51,18 +51,29 @@ width: 120px;
 /* background-color: pink; */
 display: flex;
 align-items: center;
+
+
+
+
 `
 const Icon = styled(RiAccountCircleLine)`
  font-size:20px;
         font-weight:700;
         color: black;
     font-family: poppins;
+    @media screen and (max-width: 786px){
+    color: #fff;
+}
 `
 const Icon1 = styled(FaCartArrowDown)`
  font-size:20px;
         font-weight:700;
         color: black;
     font-family: poppins;
+
+    @media screen and (max-width: 786px){
+    color: #fff;
+}
 `
 const Acct = styled.div`
  font-size:17px;
@@ -70,6 +81,10 @@ const Acct = styled.div`
         color: black;
     font-family: poppins;
     margin-left: 20px;
+
+    @media screen and (max-width: 786px){
+    color: #fff;
+}
 `
 
 const Con  = styled.div`
@@ -163,17 +178,17 @@ img{
 @media screen and (max-width: 768px){
     display:flex;
     flex-direction:column;
-    position: absolute;
-    height: 80vh;
-    width: 70%;
+    position: fixed;
+    height: 90vh;
+    width: 100%;
     top: 95px;
     justify-content:space-evenly;
     left: ${({change})=> (change? '-100%' : 0)};
         background-color:  #2F123B;
-        color: black;
-        border-radius: 0px 10px 10px 0px;
+        color: #fff;
+        /* border-radius: 0px 10px 10px 0px; */
         transition: all 1400ms;
-        color:white
+    
 
 }
  
@@ -192,6 +207,10 @@ const Nav = styled.div`
     transform: scale(1.40);
     transition: all 500ms; 
     /* text-decoration: line-through; */
+}
+
+@media screen and (max-width: 786px){
+    color: #fff;
 }
 `
 

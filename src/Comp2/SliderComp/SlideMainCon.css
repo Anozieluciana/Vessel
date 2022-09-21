@@ -1,0 +1,41 @@
+
+
+.SlideMainHolCon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+.SlideMainHolWrap{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .SlideMainHolWrap{
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-y: auto;
+      width: 90%;
+      /* background-color: green; */
+      justify-content: flex-start;
+     /* overflow: inline 3px; ; */
+    } 
+}
+.What{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.What > span{
+    color: #2F123B;
+}
